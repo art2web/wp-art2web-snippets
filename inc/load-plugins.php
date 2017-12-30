@@ -75,10 +75,33 @@ function art2web_snippets_register_required_plugins() {
 		),
 
 		array(
-			'name'      => 'Contact Form DB',
-			'slug'      => 'contact-form-7-to-database-extension',
+			'name'      => 'All 404 Redirect to Homepage',
+			'slug'      => 'all-404-redirect-to-homepage',
 			'required'  => false,
 		),
+
+		array(
+			'name'      => 'Admin Menu Editor',
+			'slug'      => 'admin-menu-editor',
+			'required'  => false,
+		),
+
+		array(
+			'name'      => 'Flamingo',
+			'slug'      => 'flamingo',
+			'required'  => false,
+		),
+		
+		/*
+		array(
+			'name'      => 'Divi Builder',
+			'slug'      => 'divi-builder',
+			'source'             => dirname( __FILE__ ) . '/plugins/divi-builder.zip', // The plugin source.
+			'required'           => false, // If false, the plugin is only 'recommended' instead of required.
+			'force_activation'   => false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch.
+			'force_deactivation' => false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins.
+		),
+		*/
 
 		array(
 			'name'      => 'Drag & Drop Featured Image',
@@ -105,14 +128,15 @@ function art2web_snippets_register_required_plugins() {
 		),
 
 		array(
-			'name'      => 'Lockdown WP Admin',
-			'slug'      => 'lockdown-wp-admin',
+			'name'      => 'Google Captcha (reCAPTCHA) by BestWebSoft',
+			'slug'      => 'google-captcha',
 			'required'  => false,
 		),
 
+
 		array(
-			'name'      => 'Social Connect',
-			'slug'      => 'social-connect',
+			'name'      => 'Lockdown WP Admin',
+			'slug'      => 'lockdown-wp-admin',
 			'required'  => false,
 		),
 
@@ -122,9 +146,17 @@ function art2web_snippets_register_required_plugins() {
 			'required'  => false,
 		),
 
+/*
 		array(
-			'name'        => 'WP Smush',
-			'slug'        => 'wp-smushit',
+			'name'        => 'Imsanity',
+			'slug'        => 'imsanity',
+			'required'  => false,
+		),
+*/
+
+		array(
+			'name'        => 'EWWW Image Optimizer',
+			'slug'        => 'ewww-image-optimizer',
 			'required'  => false,
 		),
 
@@ -144,8 +176,8 @@ function art2web_snippets_register_required_plugins() {
 			'name'               => 'Advanced Custom Fields: Repeater Field', // The plugin name.
 			'slug'               => 'acf-repeater', // The plugin slug (typically the folder name).
 			'source'             => dirname( __FILE__ ) . '/plugins/acf-repeater.zip', // The plugin source.
-			'required'           => true, // If false, the plugin is only 'recommended' instead of required.
-			'force_activation'   => true, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch.
+			'required'           => false, // If false, the plugin is only 'recommended' instead of required.
+			'force_activation'   => false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch.
 			'force_deactivation' => false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins.
 		),
 
@@ -161,9 +193,9 @@ function art2web_snippets_register_required_plugins() {
 		array(
 			'name'               => 'Advanced Custom Fields: Gallery Field', // The plugin name.
 			'slug'               => 'acf-gallery', // The plugin slug (typically the folder name).
-			'source'             => dirname( __FILE__ ) . '/plugins/acf-repeater.zip', // The plugin source.
-			'required'           => true, // If false, the plugin is only 'recommended' instead of required.
-			'force_activation'   => true, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch.
+			'source'             => dirname( __FILE__ ) . '/plugins/acf-gallery.zip', // The plugin source.
+			'required'           => false, // If false, the plugin is only 'recommended' instead of required.
+			'force_activation'   => false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch.
 			'force_deactivation' => false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins.
 		),
 
